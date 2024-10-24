@@ -122,6 +122,20 @@ Callback = <function> - The function of the toggle.
 ]]
 
 Tab:AddButton({
+	Name = "Aimbot V2",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/HGZaJNxe"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Infinite Jump",
+	Callback = function()
+      		loadstring(game:HttpGet("loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Jump.txt"))()"))()
+  	end    
+})
+			
+Tab:AddButton({
 	Name = "Click Teleport",
 	Callback = function()
       		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Click%20Teleport.txt"))()
