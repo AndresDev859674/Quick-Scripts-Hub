@@ -32,7 +32,7 @@ OrionLib:MakeNotification({
 Tab:AddButton({
 	Name = "Infinite Yield",
 	Callback = function()
-      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source')()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
   	end    
 })
 
