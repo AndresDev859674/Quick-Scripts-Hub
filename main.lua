@@ -37,13 +37,6 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "Infinite Jump",
-	Callback = function()
-      		loadstring(game:HttpGet("loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Jump.txt"))()
-  	end    
-})
-
-Tab:AddButton({
 	Name = "Aimbot V2",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/AndresDev859674/Quick-Scripts-Hub/refs/heads/main/aimbotv2.lua'))()
