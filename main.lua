@@ -37,13 +37,6 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "Aimbot V2",
-	Callback = function()
-      		loadstring(game:HttpGet('https://raw.githubusercontent.com/AndresDev859674/Quick-Scripts-Hub/refs/heads/main/aimbotv2.lua'))()
-  	end    
-})
-
-Tab:AddButton({
 	Name = "Aimbot",
 	Callback = function()
       		
