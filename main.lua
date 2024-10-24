@@ -23,8 +23,8 @@ local Section = Tab2:AddSection({
 })
 
 OrionLib:MakeNotification({
-	Name = "Title!",
-	Content = "Welcome to Quick Scripts Hub",
+	Name = "Welcome!",
+	Content = "Welcome to Quick Scripts Hub, Choose A Script!",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
@@ -33,6 +33,20 @@ Tab:AddButton({
 	Name = "Infinite Yield",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Infinite Jump",
+	Callback = function()
+      		loadstring(game:HttpGet("loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Jump.txt"))()"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Aimbot V2",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/AndresDev859674/Quick-Scripts-Hub/refs/heads/main/aimbotv2.lua'))()
   	end    
 })
 
