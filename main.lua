@@ -39,7 +39,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "Infinite Jump",
 	Callback = function()
-      		loadstring(game:HttpGet("loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Jump.txt"))()"))()
+      		loadstring(game:HttpGet("loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Jump.txt"))()
   	end    
 })
 
