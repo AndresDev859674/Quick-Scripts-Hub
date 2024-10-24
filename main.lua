@@ -24,7 +24,7 @@ local Section = Tab2:AddSection({
 
 OrionLib:MakeNotification({
 	Name = "Welcome!",
-	Content = "Welcome to Quick Scripts Hub, Choose A Script!",
+	Content = "Welcome to Quick Scripts Hub Choose A Script!",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
