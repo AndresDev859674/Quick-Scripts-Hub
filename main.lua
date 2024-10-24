@@ -117,6 +117,17 @@ Tab:AddButton({
   	end    
 })
 
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+--[[
+Name = <string> - The name of the toggle.
+Default = <bool> - The default value of the toggle.
+Callback = <function> - The function of the toggle.
+]]
+
 Tab:AddButton({
 	Name = "Click Teleport",
 	Callback = function()
