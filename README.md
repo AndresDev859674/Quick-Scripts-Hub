@@ -11,4 +11,4 @@ Remember This Script Is In Beta,
 We will add more things in the future!
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AndresDev859674/Quick-Scripts-Hub/main/main.lua"))()```
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AndresDev859674/Quick-Scripts-Hub/main/main.lua"))()
