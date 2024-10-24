@@ -13,8 +13,8 @@ local Section = Tab:AddSection({
 })
 
 OrionLib:MakeNotification({
-	Name = "Title!",
-	Content = "Welcome to Quick Scripts Hub",
+	Name = "Welcome!",
+	Content = "Welcome to Quick Scripts Hub, Find The Script You Like",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
@@ -129,5 +129,26 @@ Tab:AddButton({
 	Name = "Btools",
 	Callback = function()
       		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "WRD ESP",
+	Callback = function()
+      		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/WRD%20ESP.txt"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Teleport To Player",
+	Callback = function()
+      		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Teleport%20To%20Player.txt"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Highlight Player",
+	Callback = function()
+      		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Highlight%20Player.txt"))()
   	end    
 })
