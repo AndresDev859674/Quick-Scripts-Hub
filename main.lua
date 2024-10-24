@@ -110,39 +110,6 @@ Tab:AddButton({
   	end    
 })
 
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
---[[
-Name = <string> - The name of the toggle.
-Default = <bool> - The default value of the toggle.
-Callback = <function> - The function of the toggle.
-]]
-
-FunctionsSection:AddButton({
-	Name = "Restart",
-	Callback = Functions.Restart
-})
-
-FunctionsSection:AddButton({
-	Name = "Exit",
-	Callback = function()
-		Functions:Exit()
-		Library.Unload()
-	end
-})
-
-FunctionsSection:AddButton({
-	Name = "Copy Script Page",
-	Callback = function()
-		setclipboard("https://github.com/Exunys/Aimbot-V2")
-	end
-})
-  	end    
-})
-
 Tab:AddButton({
 	Name = "Infinite Jump",
 	Callback = function()
