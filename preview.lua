@@ -32,12 +32,27 @@ local Section = Tab3:AddSection({
 	Name = "Section"
 })
 
+local TabClient = Window:MakeTab({
+	Name = "Client",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = TabClient:AddSection({
+	Name = "Section"
+})
+
 OrionLib:MakeNotification({
 	Name = "Welcome to Quick Scripts",
 	Content = "WARNING: These Scripts May Have Huge Potential (Be Careful)",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
+
+Tab2:AddLabel("Recommended For The Most Chaotic Game Prison Life")
+Tab3:AddLabel("Recommended for Shooting and Battle Games etc.")
+
+TabClient:AddLabel("Quick Scripts Hub Options and Experiments")
 
 Tab:AddLabel("Welcome to Quick Scripts, Select a Button (script)")
 
@@ -52,6 +67,13 @@ Tab3:AddButton({
 	Name = "Aimbot V2",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/AndresDev859674/Quick-Scripts-Hub/refs/heads/main/aimbotv2.lua'))()
+  	end    
+})
+
+TabClient:AddButton({
+	Name = "Close Permanently, Close The Instant Hub",
+	Callback = function()
+      		OrionLib:Destroy()
   	end    
 })
 
