@@ -49,6 +49,9 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
+Tab2:AddLabel("Recommended For The Most Chaotic Game Prison Life")
+Tab3:AddLabel("Recommended for Shooting and Battle Games etc.")
+
 TabClient:AddLabel("Quick Scripts Hub Options and Experiments")
 
 Tab:AddLabel("Welcome to Quick Scripts, Select a Button (script)")
@@ -61,6 +64,13 @@ Tab:AddButton({
   	end    
 })
 
+Tab:AddButton({
+	Name = "unfair Hub (THE MOST POPULAR ON SCRIPTBLOX)",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/rbIxscriptsnet/unfair/main/rblxhub.lua'),true))()
+  	end    
+})
+
 Tab3:AddButton({
 	Name = "Aimbot V2",
 	Callback = function()
@@ -69,7 +79,7 @@ Tab3:AddButton({
 })
 
 TabClient:AddButton({
-	Name = "Close Permanently",
+	Name = "Close Permanently, Close The Instant Hub",
 	Callback = function()
       		OrionLib:Destroy()
   	end    
