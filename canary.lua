@@ -64,13 +64,6 @@ Tab:AddButton({
   	end    
 })
 
-Tab:AddButton({
-	Name = "unfair Hub (THE MOST POPULAR ON SCRIPTBLOX)",
-	Callback = function()
-      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/rbIxscriptsnet/unfair/main/rblxhub.lua'),true))()
-  	end    
-})
-
 Tab3:AddButton({
 	Name = "Aimbot V2",
 	Callback = function()
