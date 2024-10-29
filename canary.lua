@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Quick Scripts Hub (Preview)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Quick Scripts Hub (Canary)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
 	Name = "Basic",
@@ -40,6 +40,7 @@ OrionLib:MakeNotification({
 })
 
 Tab:AddLabel("Welcome to Quick Scripts, Select a Button (script)")
+Tab:AddLabel("WARNING: CANARY VERSION IS A VERY UNSTABLE VERSION")
 
 Tab:AddButton({
 	Name = "Infinite Yield",
