@@ -64,13 +64,6 @@ Tab:AddButton({
   	end    
 })
 
-Tab:AddButton({
-	Name = "Ez Hub (TOP 3 ON THE SCRIPTBLOX)",
-	Callback = function()
-      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug42O/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
-  	end    
-})
-
 Tab3:AddButton({
 	Name = "Aimbot V2",
 	Callback = function()
