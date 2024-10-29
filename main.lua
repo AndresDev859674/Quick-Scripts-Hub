@@ -22,9 +22,19 @@ local Section = Tab2:AddSection({
 	Name = "Section"
 })
 
+local Tab3 = Window:MakeTab({
+	Name = "FPS",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab3:AddSection({
+	Name = "Section"
+})
+
 OrionLib:MakeNotification({
-	Name = "Welcome!",
-	Content = "Welcome to Quick Scripts Hub, Choose A Script!",
+	Name = "Welcome to Quick Scripts",
+	Content = "WARNING: These Scripts May Have Huge Potential (Be Careful)",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
@@ -36,7 +46,7 @@ Tab:AddButton({
   	end    
 })
 
-Tab:AddButton({
+Tab3:AddButton({
 	Name = "Aimbot V2",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/AndresDev859674/Quick-Scripts-Hub/refs/heads/main/aimbotv2.lua'))()
@@ -44,6 +54,13 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
+	Name = "( OP ) Roblox FE Chat Bypasser Script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/SkireScripts/Ouxie/main/Projects/simplebypass.lua"))()
+  	end    
+})
+
+Tab3:AddButton({
 	Name = "Aimbot",
 	Callback = function()
       		
@@ -149,7 +166,7 @@ Tab:AddButton({
   	end    
 })
 
-Tab:AddButton({
+Tab3:AddButton({
 	Name = "WRD ESP",
 	Callback = function()
       		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/WRD%20ESP.txt"))()
