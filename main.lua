@@ -49,6 +49,13 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
+OrionLib:MakeNotification({
+	Name = "Quick Scripts Hub Updated To 24.1.1.2",
+	Content = "Texts, Scripts and Improvements Have Been Added",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
 Tab2:AddLabel("Recommended For The Most Chaotic Game Prison Life")
 Tab3:AddLabel("Recommended for Shooting and Battle Games etc.")
 
