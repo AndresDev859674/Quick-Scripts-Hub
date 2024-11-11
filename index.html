@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Scripts Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-in-out;
+        }
+
+        h1,
+        h2 {
+            color: #000000;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        p,
+        ol {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        pre {
+            background-color: #2d2d2d;
+            color: #f8f8f8;
+            padding: 20px;
+            border-radius: 20px;
+            font-size: 1.1rem;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-x: auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            line-height: 1.5;
+            font-family: 'Courier New', Courier, monospace;
+            margin-bottom: 20px;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+
+        pre:hover {
+            transform: scale(1.05);
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .note {
+            font-style: italic;
+            color: #e74c3c;
+            background-color: #f9f0f0;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .button,
+        .copy-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #0099ff;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 20px;
+        }
+
+        .button:hover,
+        .copy-btn:hover {
+            background-color: #0099ff;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #333;
+        }
+
+        /* Syntax highlighting */
+        .keyword {
+            color: #ff79c6; /* pink */
+        }
+
+        .string {
+            color: #50fa7b; /* green */
+        }
+
+        .function {
+            color: #8be9fd; /* light blue */
+        }
+
+        .operator {
+            color: #ffb86c; /* orange */
+        }
+
+        .comment {
+            color: #6272a4; /* gray */
+            font-style: italic;
+        }
+
+        /* Animation for fading in the page */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Animation for sliding in the container */
+        @keyframes slideIn {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Quick Scripts Hub</h1>
+        <p>A quick Roblox script selector without having to go to the browser to search for a script.</p>
+
+        <div class="section">
+            <h2>What Is Quick Scripts Hub?</h2>
+            <p>It's a quick script picker without having to go to the browser to search for a script,
+                But the updates are quite slow to come out You can use the Beta or the Dev or the more unstable Canary, Quick Scripts Hub has so much potential (strong roblox scripts) that they can destroy the game or ban you, they are not scripts that improve the game they are scripts that destroy the game, you can go to the Github page https://github.com/AndresDev859674/Quick-Scripts-Hub/tree/main To the Issues Tab to Report a Bug or Request a Script to the Creator.</p>
+        </div>
+
+        <div class="section">
+            <h2>How to run the script?</h2>
+            <ol>
+                <li>Download JJSploit or Solara (PC only).</li>
+                <li>Run the following script:</li>
+            </ol>
+            <pre id="script1"><span class="function">loadstring</span>(<span class="function">game:HttpGet</span>(<span class="string">"https://raw.githubusercontent.com/AndresDev859674/Quick-Scripts-Hub/main/main.lua"</span>))()</pre>
+            <button class="copy-btn" onclick="copyToClipboard('#script1')">Copy Code</button>
+        </div>
+
+        <div class="section">
+            <h2>Preview Version</h2>
+            <p>Here is the script to run the preview. Note that it may contain bugs and instability.</p>
+            <pre id="script2"><span class="function">loadstring</span>(<span class="function">game:HttpGet</span>(<span class="string">"https://raw.githubusercontent.com/AndresDev859674/Quick-Scripts-Hub/main/preview.lua"</span>))()</pre>
+            <button class="copy-btn" onclick="copyToClipboard('#script2')">Copy Code</button>
+        </div>
+
+        <div class="section">
+            <h2>Beta Version</h2>
+            <p>For those who want new scripts. Note that you may experience some instability.</p>
+            <pre id="script3"><span class="function">loadstring</span>(<span class="function">game:HttpGet</span>(<span class="string">"https://raw.githubusercontent.com/AndresDev859674/Quick-Scripts-Hub/main/beta.lua"</span>))()</pre>
+            <button class="copy-btn" onclick="copyToClipboard('#script3')">Copy Code</button>
+        </div>
+
+        <div class="section">
+            <h2>Dev Version</h2>
+            <p>For those who want more scripts (but be warned, this version may be highly unstable).</p>
+            <pre id="script4"><span class="function">loadstring</span>(<span class="function">game:HttpGet</span>(<span class="string">"https://raw.githubusercontent.com/AndresDev859674/Quick-Scripts-Hub/main/dev.lua"</span>))()</pre>
+            <button class="copy-btn" onclick="copyToClipboard('#script4')">Copy Code</button>
+        </div>
+
+        <div class="section">
+            <h2>Canary Version</h2>
+            <p class="note">This version is not recommended; it may be too unstable and updated too frequently.</p>
+            <pre id="script5"><span class="function">loadstring</span>(<span class="function">game:HttpGet</span>(<span class="string">"https://raw.githubusercontent.com/AndresDev859674/Quick-Scripts-Hub/main/canary.lua"</span>))()</pre>
+            <button class="copy-btn" onclick="copyToClipboard('#script5')">Copy Code</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Quick Scripts Hub | Created by Andrew (and Luisito) | &copy; 2024</p>
+    </footer>
+
+    <script>
+        function copyToClipboard(id) {
+            var copyText = document.querySelector(id);
+            var textArea = document.createElement("textarea");
+            textArea.value = copyText.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Code copied to clipboard!");
+        }
+    </script>
+</body>
+
+</html>
