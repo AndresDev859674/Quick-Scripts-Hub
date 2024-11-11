@@ -55,7 +55,6 @@ Tab3:AddLabel("Recommended for Shooting and Battle Games etc.")
 TabClient:AddLabel("Quick Scripts Hub Options and Experiments")
 
 Tab:AddLabel("Welcome to Quick Scripts, Select a Button (script)")
-Tab:AddLabel("WARNING: CANARY VERSION IS A VERY UNSTABLE VERSION")
 
 Tab:AddButton({
 	Name = "Infinite Yield",
