@@ -245,3 +245,10 @@ Tab2:AddButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AndresDev859674/Quick-Scripts-Hub/refs/heads/main/plop.lua"))()
   	end    
 })
+
+Tab2:AddButton({
+	Name = "PrizzLife",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AndresDev859674/Quick-Scripts-Hub/refs/heads/main/prizz.lua"))()
+  	end    
+})
