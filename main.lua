@@ -232,7 +232,7 @@ end)
 Tab:AddSlider({
     Name = "Train Speed",
     Min = 1,
-    Max = 100000000000000000000000000,
+    Max = 500,
     Default = 1,
     Color = Color3.fromRGB(255,255,255),
     Increment = 1,
@@ -349,7 +349,7 @@ end)
 Tab:AddSlider({
     Name = "Float Speed",
     Min = 1,
-    Max = 100000000000000000000000000,
+    Max = 350,
     Default = 1,
     Color = Color3.fromRGB(255,255,255),
     Increment = 1,
