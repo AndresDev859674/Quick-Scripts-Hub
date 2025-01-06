@@ -135,7 +135,7 @@ Tab:AddButton({
 Tab:AddSlider({
     Name = "Walkspeed",
     Min = 16,
-    Max = 1000,
+    Max = 99999,
     Default = 16,
     Color = Color3.fromRGB(255,255,255),
     Increment = 1,
@@ -148,7 +148,7 @@ Tab:AddSlider({
 Tab:AddSlider({
     Name = "JumpPower",
     Min = 50,
-    Max = 250,
+    Max = 500,
     Default = 50,
     Color = Color3.fromRGB(255,255,255),
     Increment = 1,
@@ -232,7 +232,7 @@ end)
 Tab:AddSlider({
     Name = "Train Speed",
     Min = 1,
-    Max = 100,
+    Max = 99999,
     Default = 1,
     Color = Color3.fromRGB(255,255,255),
     Increment = 1,
@@ -349,7 +349,7 @@ end)
 Tab:AddSlider({
     Name = "Float Speed",
     Min = 1,
-    Max = 100,
+    Max = 99999,
     Default = 1,
     Color = Color3.fromRGB(255,255,255),
     Increment = 1,
