@@ -412,7 +412,7 @@ Tab:AddToggle({
 Tab:AddButton({
     Name = "Dex Explorer",
     Callback = function()
-            loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/LorekeeperZinnia/Dex/refs/heads/master/main.lua"))()
     end    
 })
 
