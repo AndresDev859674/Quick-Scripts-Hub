@@ -135,7 +135,7 @@ Tab:AddButton({
 Tab:AddSlider({
     Name = "Walkspeed",
     Min = 16,
-    Max = 100000000000000000000000000,
+    Max = 650,
     Default = 16,
     Color = Color3.fromRGB(255,255,255),
     Increment = 1,
