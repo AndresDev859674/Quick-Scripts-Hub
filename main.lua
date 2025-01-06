@@ -540,9 +540,9 @@ Tab2:AddButton({
 })
 
 Tab2:AddButton({
-    Name = "Prison Life Gui",
+    Name = "REVIZ Admin Script",
     Callback = function()
-            loadstring(game:HttpGet("https://zygomorphic-jobyna-impacthub-3d96c239.koyeb.app/main.lua"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/kr4sk/Reviz-admin/refs/heads/main/Reviz-admin.lua"))()
     end    
 })
 
