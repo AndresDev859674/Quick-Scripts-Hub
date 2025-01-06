@@ -370,6 +370,46 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
+    Name = "High Health",
+    Callback = function()
+        local player = game.Players.LocalPlayer
+        local character = player.Character
+        local humanoid = character:FindFirstChildOfClass("Humanoid")
+        humanoid.Health = humanoid.MaxHealth
+    end    
+})
+
+Tab:AddButton({
+    Name = "Sit",
+    Callback = function()
+        local player = game.Players.LocalPlayer
+        local character = player.Character
+        local humanoid = character:FindFirstChildOfClass("Humanoid")
+        humanoid.Sit = true
+    end    
+})
+
+local GodModeEnabled = false
+
+Tab:AddToggle({
+    Name = "God Mode",
+    Default = false,
+    Callback = function(Value)
+        GodModeEnabled = Value
+        local player = game.Players.LocalPlayer
+        local character = player.Character
+        local humanoid = character:FindFirstChildOfClass("Humanoid")
+
+        if GodModeEnabled then
+            while GodModeEnabled do
+                wait(1)
+                humanoid.Health = humanoid.MaxHealth
+            end
+        end
+    end    
+})
+
+Tab:AddButton({
     Name = "Dex Explorer",
     Callback = function()
             loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
