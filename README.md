@@ -2,6 +2,10 @@
 
 A Quick Roblox Scripts Hub
 
+# Sorry....
+
+this is the Final Version of the V1 now get THE NEW V2! https://github.com/AndresDev859674/Quick-Scripts-Hub-V2/tree/main
+
 ## What Is Quick Scripts Hub?
 
 It's a quick script picker without having to go to the browser to search for a script, But the updates are quite slow to come out, Quick Scripts Hub has so much potential (strong roblox scripts) that they can destroy the game or ban you, they are not scripts that improve the game they are scripts that destroy the game, you can go to the Github page https://github.com/AndresDev859674/Quick-Scripts-Hub/tree/main To the Issues Tab to Report a Bug or Request a Script to the Creator.
