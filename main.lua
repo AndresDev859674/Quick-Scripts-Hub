@@ -18,13 +18,19 @@ local Tab2 = Window:MakeTab({
     PremiumOnly = false
 })
 
+local Tab4 = Window:MakeTab({
+    Name = "Roblox Rivals",
+    Icon = "rbxassetid://15862513462",
+    PremiumOnly = false
+})
+
 local Section3 = Tab2:AddSection({
     Name = "Section"
 })
 
 local Tab3 = Window:MakeTab({
     Name = "FPS",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://15862513462",
     PremiumOnly = false
 })
 
@@ -60,7 +66,7 @@ OrionLib:MakeNotification({
 })
 
 OrionLib:MakeNotification({
-    Name = "Quick Scripts Hub Updated To 25.0.0.0",
+    Name = "Quick Scripts Hub Updated To 25.1.0.0",
     Content = "*no changelogs found*",
     Image = "rbxassetid://4483345998",
     Time = 5
@@ -72,9 +78,10 @@ Tab3:AddLabel("Recommended for Shooting and Battle Games etc.")
 TabClient:AddLabel("Quick Scripts Hub Options and Experiments")
 
 Tab:AddLabel("Welcome to Quick Scripts, Select a Button (script)")
-Tab:AddParagraph("Thanks To Use 25.0.0.0!", "You are using the latest version")
+Tab:AddParagraph("Thanks To Use 25.1.0.0!", "You are using the latest version")
 
 TabCompatibility:AddParagraph("The Compatibility Is", "Xeno, JJSploit, Solara, And Alls Exploits")
+Tab4:AddParagraph("Welcome to Roblox Rivals Zone", "Here Are Some Roblox Rivals Scripts You Might Be Interested In")
 
 Tab:AddButton({
     Name = "Infinite Yield",
@@ -137,12 +144,32 @@ Tab:AddSlider({
     Min = 16,
     Max = 650,
     Default = 16,
-    Color = Color3.fromRGB(255,255,255),
-    Increment = 1,
+    Color = Color3.fromRGB(45, 170, 255),  -- Color personalizado para el slider
+    Increment = 5,  -- Incremento de 5 unidades al mover el slider
     ValueName = "Speed",
     Callback = function(Value)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
     end    
+})
+
+-- TextBox para WalkSpeed
+Tab:AddTextbox({
+    Name = "Custom WalkSpeed",
+    Default = "16", -- Valor inicial
+    TextDisappear = false,
+    Callback = function(Value)
+        local numValue = tonumber(Value) -- Convierte el texto a número
+        if numValue and numValue > 0 then
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = numValue
+        else
+            OrionLib:MakeNotification({
+                Name = "Invalid Input",
+                Content = "Please enter a valid number greater than 0.",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+        end
+    end
 })
 
 Tab:AddSlider({
@@ -150,12 +177,33 @@ Tab:AddSlider({
     Min = 50,
     Max = 500,
     Default = 50,
-    Color = Color3.fromRGB(255,255,255),
+    Color = Color3.fromRGB(144, 238, 144),  -- Verde claro
     Increment = 1,
     ValueName = "Power",
     Callback = function(Value)
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
     end    
+})
+
+
+-- TextBox para JumpPower
+Tab:AddTextbox({
+    Name = "Custom JumpPower",
+    Default = "50", -- Valor inicial
+    TextDisappear = false,
+    Callback = function(Value)
+        local numValue = tonumber(Value) -- Convierte el texto a número
+        if numValue and numValue > 0 then
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = numValue
+        else
+            OrionLib:MakeNotification({
+                Name = "Invalid Input",
+                Content = "Please enter a valid number greater than 0.",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+        end
+    end
 })
 
 local FlyEnabled = false
@@ -234,12 +282,32 @@ Tab:AddSlider({
     Min = 1,
     Max = 500,
     Default = 1,
-    Color = Color3.fromRGB(255,255,255),
+    Color = Color3.fromRGB(255, 0, 0),  -- Rojo normal
     Increment = 1,
     ValueName = "Speed",
     Callback = function(Value)
         FlySpeed = Value
     end    
+})
+
+-- TextBox para Train Speed
+Tab:AddTextbox({
+    Name = "Custom Train Speed",
+    Default = "1", -- Valor inicial
+    TextDisappear = false,
+    Callback = function(Value)
+        local numValue = tonumber(Value) -- Convierte el texto a número
+        if numValue and numValue > 0 then
+            FlySpeed = numValue -- Asigna el valor al control de velocidad
+        else
+            OrionLib:MakeNotification({
+                Name = "Invalid Input",
+                Content = "Please enter a valid number greater than 0.",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+        end
+    end
 })
 
 local NoclipEnabled = false
@@ -359,6 +427,26 @@ Tab:AddSlider({
     end    
 })
 
+-- TextBox para Float Speed
+Tab:AddTextbox({
+    Name = "Custom Float Speed",
+    Default = "1", -- Valor inicial
+    TextDisappear = false,
+    Callback = function(Value)
+        local numValue = tonumber(Value) -- Convierte el texto a número
+        if numValue and numValue > 0 then
+            FloatSpeed = numValue -- Asigna el valor al control de velocidad flotante
+        else
+            OrionLib:MakeNotification({
+                Name = "Invalid Input",
+                Content = "Please enter a valid number greater than 0.",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+        end
+    end
+})
+
 Tab:AddButton({
     Name = "Suicide",
     Callback = function()
@@ -392,7 +480,7 @@ Tab:AddButton({
 local GodModeEnabled = false
 
 Tab:AddToggle({
-    Name = "God Mode",
+    Name = "Infinite High Health Mode",
     Default = false,
     Callback = function(Value)
         GodModeEnabled = Value
@@ -478,3 +566,136 @@ Tab2:AddButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AndresDev859674/Quick-Scripts-Hub/refs/heads/main/prizz.lua"))()
     end    
 })
+
+Tab4:AddButton({
+    Name = "Roblox Rivals GUI",
+    Callback = function()
+        local scriptURL = 'https://raw.githubusercontent.com/Sheeshablee73/Scriptss/main/RivalsUPD2.lua'
+local response = game:HttpGet(scriptURL)
+local executeScript = loadstring(response)
+executeScript()
+    end    
+})
+
+Tab4:AddButton({
+    Name = "Ronix Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/666dbc0571c238fbd3203da720d06060.lua"))()
+    end    
+})
+
+Tab4:AddButton({
+    Name = "Tbao Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubRivals"))()
+    end    
+})
+
+Tab4:AddButton({
+    Name = "Azure Modded",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
+    end    
+})
+
+Tab:AddButton({
+    Name = "TP Tool",
+    Callback = function()
+        mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Click Teleport"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+    end    
+})
+
+-- TextBox para Give Health
+Tab:AddTextbox({
+    Name = "Give Health",
+    Default = "100", -- Valor inicial de salud
+    TextDisappear = true, -- El texto desaparece después de usarlo
+    Callback = function(Value)
+        local healthValue = tonumber(Value) -- Convertir el valor ingresado a número
+        if healthValue and healthValue > 0 then
+            local player = game.Players.LocalPlayer
+            local character = player.Character
+            local humanoid = character:FindFirstChildOfClass("Humanoid")
+
+            if humanoid then
+                humanoid.Health = healthValue -- Establecer la salud del jugador
+                print("Health set to: " .. healthValue) -- Confirmación en consola
+            else
+                print("Humanoid not found!") -- Si no se encuentra el humanoide
+            end
+        else
+            OrionLib:MakeNotification({
+                Name = "Invalid Input",
+                Content = "Please enter a valid number greater than 0.",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+        end
+    end
+})
+
+-- Variables
+local CrazyFlyEnabled = false
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()  -- Asegurarse de que el personaje esté cargado
+local humanoid = character:WaitForChild("Humanoid")
+local bodyVelocity
+
+-- Toggle para activar/desactivar el Crazy Fly
+Tab:AddToggle({
+    Name = "Crazy Fly",
+    Default = false,
+    Callback = function(Value)
+        CrazyFlyEnabled = Value
+        
+        if CrazyFlyEnabled then
+            -- Crear el BodyVelocity para simular el vuelo
+            bodyVelocity = Instance.new("BodyVelocity", character.HumanoidRootPart)
+            bodyVelocity.MaxForce = Vector3.new(4000, 4000, 4000)  -- Fuerza máxima para el vuelo
+            bodyVelocity.Velocity = Vector3.new(0, 0, 0)  -- Movimiento controlado por las teclas
+            bodyVelocity.Parent = character.HumanoidRootPart
+
+            -- Ajustar la posición para simular que está flotando en el aire
+            character.HumanoidRootPart.CFrame = character.HumanoidRootPart.CFrame + Vector3.new(0, 2, 0)  -- Levantar un poco al personaje
+        else
+            -- Eliminar el BodyVelocity cuando se desactiva el Crazy Fly
+            if bodyVelocity then
+                bodyVelocity:Destroy()
+            end
+
+            -- Volver a la posición original
+            character.HumanoidRootPart.CFrame = character.HumanoidRootPart.CFrame - Vector3.new(0, 2, 0)
+        end
+    end    
+})
+
+-- Conectar el control del vuelo al teclado
+game:GetService("UserInputService").InputBegan:Connect(function(input)
+    if CrazyFlyEnabled then
+        if input.UserInputType == Enum.UserInputType.Keyboard then
+            -- Control de dirección con teclas WASD
+            if input.KeyCode == Enum.KeyCode.W then
+                bodyVelocity.Velocity = character.HumanoidRootPart.CFrame.lookVector * 100  -- Volar hacia adelante
+            elseif input.KeyCode == Enum.KeyCode.S then
+                bodyVelocity.Velocity = -character.HumanoidRootPart.CFrame.lookVector * 100  -- Volar hacia atrás
+            elseif input.KeyCode == Enum.KeyCode.A then
+                bodyVelocity.Velocity = -character.HumanoidRootPart.CFrame.rightVector * 100  -- Volar hacia la izquierda
+            elseif input.KeyCode == Enum.KeyCode.D then
+                bodyVelocity.Velocity = character.HumanoidRootPart.CFrame.rightVector * 100  -- Volar hacia la derecha
+            elseif input.KeyCode == Enum.KeyCode.E then
+                bodyVelocity.Velocity = Vector3.new(0, 100, 0)  -- Volar hacia arriba (presionando E)
+            elseif input.KeyCode == Enum.KeyCode.F then
+                bodyVelocity.Velocity = Vector3.new(0, -100, 0)  -- Volar hacia abajo (presionando F)
+            end
+        end
+    end
+end)
