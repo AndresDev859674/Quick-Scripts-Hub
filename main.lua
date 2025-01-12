@@ -78,8 +78,7 @@ Tab3:AddLabel("Recommended for Shooting and Battle Games etc.")
 TabClient:AddLabel("Quick Scripts Hub Options and Experiments")
 
 Tab:AddLabel("Welcome to Quick Scripts, Select a Button (script)")
-Tab:AddParagraph("Thanks for Use the Final Version", "You are using the Final Version, Get The V2 Here : loadstring(game:HttpGet("https://raw.githubusercontent.com/AndresDev859674/Quick-Scripts-Hub-V2/main/main.lua"))()")
-
+Tab:AddParagraph("Thanks for using the final version", "You are using the final version. Get the V2 here: loadstring(game:HttpGet('https://raw.githubusercontent.com/AndresDev859674/Quick-Scripts-Hub-V2/main/main.lua'))()")
 TabCompatibility:AddParagraph("The Compatibility Is", "Xeno, JJSploit, Solara, And Alls Exploits")
 Tab4:AddParagraph("Welcome to Roblox Rivals Zone", "Here Are Some Roblox Rivals Scripts You Might Be Interested In")
 
